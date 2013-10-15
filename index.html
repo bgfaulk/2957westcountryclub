@@ -243,18 +243,85 @@
 
 <script src="js/foundation/foundation.orbit.js"></script>
 
+<script src="js/foundation/foundation.section.js"></script>
+
 <script>
     $(document).foundation();
 </script>
 </body>
 
 <div id="myModal" class="reveal-modal">
-    <h2>Contact for a showing today!</h2>
-    <p class="lead">Please Call Lauren Faulk at:</p>
-    <p>501-230-9762</p>
-    <p class="lead">Or Email her at:</p>
-    <p>laurentucker1212@yahoo.com</p>
-    <a class="close-reveal-modal">&#215;</a>
+    <!-- Main Page Content and Sidebar -->
+
+    <div class="row">
+
+        <!-- Contact Details -->
+        <div class="large-9 columns">
+
+            <h3>Get in Touch!</h3>
+            <p>We'd love to hear from you.
+                You can reach out to us about a showing, or if you have a specific questions.
+                We would love hearing from <em>you</em>.</p>
+
+            <div class="section-container tabs" data-section>
+                <section class="section">
+                    <h5 class="title"><a href="#panel1">Contact Seller</a></h5>
+                    <div class="content" data-slug="panel1">
+                        <form>
+                            <div class="row collapse">
+                                <div class="large-2 columns">
+                                    <label class="inline">Your Name</label>
+                                </div>
+                                <div class="large-10 columns">
+                                    <input type="text" id="yourName" placeholder="Jane Smith">
+                                </div>
+                            </div>
+                            <div class="row collapse">
+                                <div class="large-2 columns">
+                                    <label class="inline"> Your Email</label>
+                                </div>
+                                <div class="large-10 columns">
+                                    <input type="text" id="yourEmail" placeholder="jane@smithco.com">
+                                </div>
+                            </div>
+                            <label>What's up?</label>
+                            <textarea rows="4"></textarea>
+                            <button type="submit" class="radius button">Submit</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- End Contact Details -->
+
+
+        <div class="large-3 columns">
+            <h5>Map</h5>
+            <!-- Clicking this placeholder fires the mapModal Reveal modal -->
+            <p>
+                <a href="" data-reveal-id="mapModal"><img src="img/map_400_280.png"></a><br />
+                <a href="" data-reveal-id="mapModal">View Map</a>
+            </p>
+            <p>
+                2957 West Country Club.<br />
+                Searcy, AR 72143
+            </p>
+        </div>
+    </div>
+
+    <!-- End Main Content and Sidebar -->
+
+    <!-- Map Modal -->
+
+    <div class="reveal-modal" id="mapModal">
+        <h4>Where We Are</h4>
+        <p><img src="img/map_800_600.png" /></p>
+
+        <!-- Any anchor with this class will close the modal. This also inherits certain styles, which can be overriden. -->
+        <a href="#" class="close-reveal-modal">&times;</a>
+    </div>
+
 </div>
 
 </html>
